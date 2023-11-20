@@ -4,6 +4,7 @@ server:
 eureka:
   instance:
     hostname: localhost
+    lease-renewal-interval-in-seconds: 30
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
