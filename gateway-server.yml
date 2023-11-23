@@ -26,6 +26,6 @@ management:
 
 info:
   app:
-    name: Actor Master
-    description: Actor Master Application
+    name: GatewayServer
+    description: GatewayServer Application
     version: 1.0.0
