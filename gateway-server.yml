@@ -10,11 +10,22 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
-resilience4j:
-  circuitbreaker:
-    configs:
-      default:
-        sliding-window-size: 10
-        permitted-number-of-calls-in-half-open-state: 2
-        failure-rate-threshold: 50
-        wait-duration-in-open-state: 10000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9090
+
+info:
+  app:
+    name: Actor Master
+    description: Actor Master Application
+    version: 1.0.0
