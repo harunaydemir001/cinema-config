@@ -10,7 +10,6 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
 
-
 logging:
   level:
     root: info
