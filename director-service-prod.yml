@@ -26,7 +26,7 @@ management:
     health:
       show-details: always
   server:
-    port: 9090
+    port: 9092
 
 info:
   app:
