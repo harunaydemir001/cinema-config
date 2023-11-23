@@ -13,3 +13,23 @@ eureka:
 logging:
   level:
     root: info
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9090
+
+info:
+  app:
+    name: Director Master
+    description: Director Master Application
+    version: 1.0.0
