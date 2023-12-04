@@ -1,10 +1,6 @@
 server:
   port: 8082
 
-spring:
-  config:
-    import: classpath:config-server/src/main/resources/application-common.yml
-
 logging:
   level:
     root: info
