@@ -66,3 +66,10 @@ resilience4j:
         timeout-duration: 0s
     metrics:
       enabled: true
+  timelimiter:
+    instances:
+      timeLimiterApi:
+        cancel-running-future: true
+        timeout-duration: 2s
+    metrics:
+      enabled: true
