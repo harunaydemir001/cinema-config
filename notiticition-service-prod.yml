@@ -1,1 +1,36 @@
+server:
+  port: 8073
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8071/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+
+logging:
+  level:
+    root: info
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  info:
+    env:
+      enabled: true
+  endpoint:
+    health:
+      show-details: always
+  server:
+    port: 9093
+
+info:
+  app:
+    name: Director Master
+    description: Director Master Application
+    version: 1.0.0
 
